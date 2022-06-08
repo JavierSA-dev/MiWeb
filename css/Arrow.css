@@ -1,0 +1,36 @@
+.arrowContainer {
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+}
+
+#arrowDown {
+  font-size: 100px;
+  color: rgb(180, 58, 180);
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+#arrowDown:hover {
+  cursor: pointer;
+  text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+@keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-30px);
+  }
+
+  60% {
+    transform: translateY(-15px);
+  }
+}
