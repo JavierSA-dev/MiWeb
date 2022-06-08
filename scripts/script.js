@@ -24,7 +24,7 @@ window.onload = function() {
             navBar.style.setProperty("align-items", "center")
             navBar.style.setProperty("font-size", "50px")
             navBar.insertAdjacentHTML('afterbegin', '<div class="separator">≡</div>');
-            navBar.insertAdjacentHTML('afterbegin', '<a href="#inicio"><img width="40%" height="40%" src="../img/logo.png"/></a> ');
+            navBar.insertAdjacentHTML('afterbegin', '<a href="#inicio"><img width="40%" height="40%" src="img/logo.png"/></a> ');
 
         }
     }
