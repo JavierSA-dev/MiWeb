@@ -1,6 +1,6 @@
 window.onload = function() {
     function resize(){
-
+        console.log("hola")
         const rootWidth = window.innerWidth
         const startContainer = document.getElementsByClassName("startContainer")[0]
         const navBar = document.getElementsByClassName("navBarContainer")[0]
@@ -25,24 +25,27 @@ window.onload = function() {
             navBar.style.setProperty("font-size", "50px")
             navBar.insertAdjacentHTML('afterbegin', '<div class="separator">≡</div>');
             navBar.insertAdjacentHTML('afterbegin', '<a href="#inicio"><img width="40%" height="40%" src="img/logo.png"/></a> ');
+            const separator = document.getElementsByClassName('separator')[0]
+            const navBarMobile = document.getElementsByClassName('navBarMobile')[0]
+            const cross = document.getElementById('cross')
+
+        
+            function showMenu(){
+                navBarMobile.style.setProperty('right', 0)
+            }
+            function hideMenu(){
+                navBarMobile.style.setProperty('right', '-100%')
+            }
+        
+
+            separator.addEventListener('click', showMenu)
+            cross.addEventListener('click', hideMenu)
+
 
         }
     }
     resize()
 
-    const separator = document.getElementsByClassName('separator')[0]
-    const navBarMobile = document.getElementsByClassName('navBarMobile')[0]
-    const cross = document.getElementById('cross')
-    console.log(separator)
-    separator.addEventListener('click', showMenu)
-    cross.addEventListener('click', hideMenu)
-
-    function showMenu(){
-        navBarMobile.style.setProperty('right', 0)
-    }
-    function hideMenu(){
-        navBarMobile.style.setProperty('right', '-100%')
-    }
 
 
     window.addEventListener('resize', resize);
