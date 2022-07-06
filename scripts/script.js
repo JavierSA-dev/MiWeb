@@ -22,7 +22,7 @@ window.onload = function() {
             navBar.replaceChildren()
             navBar.style.setProperty("grid-template-columns", "repeat(2, 1fr)")
             navBar.style.setProperty("align-items", "center")
-            navBar.style.setProperty("font-size", "50px")
+            navBar.style.setProperty("font-size", "5vh")
             navBar.insertAdjacentHTML('afterbegin', '<div class="separator">≡</div>');
             navBar.insertAdjacentHTML('afterbegin', '<a href="#inicio"><img width="40%" height="40%" src="img/logo.png"/></a> ');
             const separator = document.getElementsByClassName('separator')[0]

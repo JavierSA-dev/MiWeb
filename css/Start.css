@@ -4,20 +4,19 @@
     position: a;
     gap: 2em;
     text-align: center;
-    align-items: center;
-    font-size: 30px;
+    font-size: 2vw;
     padding: 50px;
     border-radius: 2%;
     margin-left:30px ;
     margin-right:30px ;
     min-height: 91vh;
     margin-bottom: 1%;
-    
-
+    align-items: center;
 }
 
 .containerDesktop{
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
 }
 
 *{
@@ -25,16 +24,15 @@
 }
 
 img{
-    max-height:100%;
-    max-width:90%;
+    max-width: 40vw;
 }
 
 .hola{
-    font-size: 70px;
+    font-size: 7vw;
 }
 
 .subtext{
-    font-size: 20px;
+    font-size: 1vw;
 }
 
 .navBarMobile{
@@ -76,14 +74,17 @@ img{
 .studyContainer{
     display: grid;
     text-align: center;
-    grid-template-columns: repeat(2 , 1fr);
+    grid-template-columns: repeat( 4, 1fr);
     gap: 3em;
     background-color: rgb(53 55 101 / 31%);
     margin-left:30px ;
     margin-right:30px ;
-    padding: 4%;
+    margin-bottom: 30px;
+    padding: 1%;
     min-height: 91vh;
     align-items: center;
+    border-bottom: #ffffff 2px solid;
+    border-radius: 10;
     }
 
 .studyContainer > div {
@@ -105,7 +106,8 @@ img{
 }
 
 .studyContainer > div > span{
-    font-size: 30px;
+    font-size: 1.5vw;
+    font-family: fontVideoGame;
     padding: 20px;
 }
 
@@ -127,8 +129,8 @@ grid-column: 1/-1;
 }
 
 #proyectos{
-    letter-spacing: 15px;
-    font-size: 50px;
+    letter-spacing: 2vw;
+    font-size: 4vw;
     color: white;
     text-shadow: black 3px 5px 2px;
     text-transform: uppercase;
@@ -145,4 +147,10 @@ grid-column: 1/-1;
 
 .img-overlay {
 
+}
+
+
+@font-face {
+    font-family: fontVideoGame;
+    src: url(../fonts/prstartk.ttf);
 }
