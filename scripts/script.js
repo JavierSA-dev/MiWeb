@@ -12,8 +12,8 @@ window.onload = function() {
             navBar.style.setProperty("grid-template-columns", "repeat(4, 1fr)")
             navBar.style.setProperty("font-size", "15px")
             navBar.insertAdjacentHTML('afterbegin', '<a href="#contacto"><div>Contacto</div></a>');
-            navBar.insertAdjacentHTML('afterbegin', '<a href="#portofolio"><div>Portofolio</div></a>');
-            navBar.insertAdjacentHTML('afterbegin', '<a href="#estudios"><div>Estudios</div></a>');
+            navBar.insertAdjacentHTML('afterbegin', '<a href="#Proyectos"><div>Conocimiento</div></a>');
+            navBar.insertAdjacentHTML('afterbegin', '<a href="#proyectos"><div>Proyectos</div></a>');
             navBar.insertAdjacentHTML('afterbegin', '<a href="#inicio"><div>Inicio</div></a>');
 
         }

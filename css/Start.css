@@ -7,8 +7,6 @@
     align-items: center;
     font-size: 30px;
     padding: 50px;
-    /* padding-bottom: 190px; */
-    border-right: 6px solid white;
     border-radius: 2%;
     margin-left:30px ;
     margin-right:30px ;
@@ -83,26 +81,35 @@ img{
     background-color: rgb(53 55 101 / 31%);
     margin-left:30px ;
     margin-right:30px ;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 4%;
     min-height: 91vh;
     align-items: center;
-
-}
+    }
 
 .studyContainer > div {
     display: grid;
-    border: 2px solid white;
+    color: black;
     padding: 1%;
-    height: 100px;
-    align-items: center;
+    height: 90%;
+    gap: 2em;
+    border-top: transparent 2px solid;
+    justify-content: center;
+}
+
+.studyContainer > div:hover {
+    color: black;
+    cursor: pointer;
+    border-top: #ffffff 2px solid;
+    background-color: #2A2B42;
+    color: white;
 }
 
 .studyContainer > div > span{
     font-size: 30px;
+    padding: 20px;
 }
 
-#estudios{
+#proyectos{
 
 grid-column: 1/-1;
 }
@@ -110,10 +117,32 @@ grid-column: 1/-1;
 .iconNew{
     position: relative;
     bottom: 240%;
-    left: 46%;
+    left: 93%;
     cursor: pointer;
+    width: fit-content;
 }
 
 .iconNew:hover{
     color: rgb(227 210 37);
+}
+
+#proyectos{
+    letter-spacing: 15px;
+    font-size: 50px;
+    color: white;
+    text-shadow: black 3px 5px 2px;
+    text-transform: uppercase;
+
+}
+
+.imgCard{
+    max-width: 80%;
+    max-height: 80%;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-overlay {
+
 }
