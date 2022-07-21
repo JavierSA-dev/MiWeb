@@ -81,7 +81,7 @@ img{
     margin-right:30px ;
     margin-bottom: 30px;
     padding: 1%;
-    min-height: 91vh;
+    min-height: 90vh;
     align-items: center;
     border-bottom: #ffffff 2px solid;
     border-radius: 10;
@@ -129,13 +129,32 @@ grid-column: 1/-1;
 }
 
 #proyectos{
-    letter-spacing: 2vw;
+    letter-spacing: 1vw;
     font-size: 4vw;
-    color: white;
-    text-shadow: black 3px 5px 2px;
+    -webkit-box-reflect: below -10px linear-gradient(transparent, rgba(0,0,0,.2));
     text-transform: uppercase;
+    text-shadow: black 3px 5px 2px;
 
 }
+
+#proyectos span {
+    position: relative;
+    display: none;
+    transition: transform 0.5s;
+    animation: blink-caret .75s step-end infinite;
+
+}
+
+#proyectos span:hover {
+    transform: translateY(-20px);
+}
+
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
 
 .imgCard{
     max-width: 80%;
@@ -145,9 +164,6 @@ grid-column: 1/-1;
     margin-right: auto;
 }
 
-.img-overlay {
-
-}
 
 
 @font-face {
