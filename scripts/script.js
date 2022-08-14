@@ -24,13 +24,13 @@ window.onload = function() {
         for (let i = 0; i < arrayProyects.length; i++) {
             arrayProyects[i].addEventListener("click", function(){
                 switch (i) {
-                    case 0:  window.open('../proyectos/nombreAleatorio/index.html', '_blank').focus();
+                    case 0:  window.open('./proyectos/nombreAleatorio/index.html', '_blank').focus();
                         break;
-                    case 1:  window.open('../proyectos/tresEnRaya/index.html', '_blank').focus();
+                    case 1:  window.open('./proyectos/tresEnRaya/index.html', '_blank').focus();
                         break;
-                    case 2:  window.open('../proyectos/ahorcado/index.html', '_blank').focus();
+                    case 2:  window.open('./proyectos/ahorcado/index.html', '_blank').focus();
                         break;
-                    case 3:  window.open('../proyectos/concursoPreguntas/index.html', '_blank').focus();
+                    case 3:  window.open('./proyectos/concursoPreguntas/index.html', '_blank').focus();
                         break;
                 }
             })
